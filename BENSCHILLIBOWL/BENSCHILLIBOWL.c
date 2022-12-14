@@ -102,11 +102,11 @@ Order *GetOrder(BENSCHILLIBOWL* bcb) {
 
 // Optional helper functions (you can implement if you think they would be useful)
 bool IsEmpty(BENSCHILLIBOWL* bcb) {
-  return false;
+ return bcb->current_size == 0;
 }
 
 bool IsFull(BENSCHILLIBOWL* bcb) {
-  return false;
+  return bcb->current_size == bcb->max_size;
 }
 
 /* this methods adds order to rear of queue */
